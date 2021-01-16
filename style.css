@@ -26,11 +26,20 @@ header a{
     text-decoration: none;
     font-size: 2rem;
     color: #000;
-    border: 2px solid #000;
-    border-radius: ;
 }
 header span{
     color: red;
+}
+header li{
+    display: inline;
+    list-style: none;
+    margin-top: 50px;
+}
+header li a{
+    text-decoration: none;
+    margin: 30px;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 .container{
     position: relative;
@@ -40,7 +49,7 @@ header span{
     width: 100%;
     top: 20vh;
     left: 0;
-    /* margin-top: 20%; */
+
 }
 .heading{
     position: relative;
@@ -63,25 +72,27 @@ header span{
     font-size: 20px;
 }
 .footer{
+    bottom: 0;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+}
+.footer ul{
+    margin-bottom: 10px;
 }
 .footer li{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: inline;
     list-style: none;
-    margin: 10px;
+    margin: 20px;
 }
 .footer li a{
-    bottom: 10px;
+    bottom: 30px;
     left: 0;
     text-decoration: none;
-    display: flex;
-    justify-content: flex-end;
-}
+    color: rgb(165, 162, 162);
+ }
+ .footer li a:hover{
+     color: #000;
+ }
