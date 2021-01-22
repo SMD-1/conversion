@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 header{
     width: 100%;
@@ -21,8 +21,6 @@ header .logo{
 }
 header a{
     position: relative;
-    /* top: 20px;
-    left: 20px; */
     text-decoration: none;
     font-size: 2rem;
     color: #000;
@@ -43,6 +41,10 @@ header li a{
     margin: 30px;
     font-weight: 500;
     font-size: 1.3rem;
+}
+header li a:hover{
+    border-bottom: 2px solid teal;
+    transition: 0.5s;
 }
 .container{
     position: relative;
@@ -99,6 +101,7 @@ header li a{
  }
  .footer li a:hover{
      color: #000;
+     
  }
 
 
@@ -108,6 +111,9 @@ header li a{
  @media (max-width: 550px){
     header .logo{
         width: 8%;
+    }
+    header li a{
+    margin: 10px;
     }
     .container{
         position: relative;
@@ -128,4 +134,5 @@ header li a{
         font-size: 20px;
         outline: none;
     }
+    
  }
